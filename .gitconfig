@@ -1,3 +1,7 @@
 [user]
 	name = Alex Jarvis
 	email = alxjrvs@gmail.com
+[color]
+    diff = auto
+    status = auto
+    branch = auto
