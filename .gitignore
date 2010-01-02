@@ -8,6 +8,7 @@
 # when a shell is a login shell).
 !.bashrc
 !.profile
+!.bash_aliases
  
 # Git aliases, identification info
 !.gitconfig
