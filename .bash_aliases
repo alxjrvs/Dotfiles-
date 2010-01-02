@@ -3,5 +3,5 @@ alias apt='sudo aptitude install'
 alias up='sudo aptitude update && sudo aptitude safe-upgrade'
 
 #Git Alias
-alias gitdone='git commit -am && git push'
+alias gd='git commit -a && git push'
     
