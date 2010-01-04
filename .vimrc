@@ -15,3 +15,11 @@ set smarttab
 imap ii <esc>
 map ; :
 noremap ;; ;
+
+"For the Markdown Text
+ augroup mkd
+
+  autocmd BufRead *.mkd  set ai formatoptions=tcroqn2 comments=n:&gt;
+
+ augroup END
+
