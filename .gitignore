@@ -20,7 +20,7 @@
  
 # Vim plugins, ftplugins, syntax etc etc
 !.vim
-#!.vim/*
+!.vim/*
 !.vim/autoload/*
 !.vim/doc/*
 !.vim/ftplugin/*
