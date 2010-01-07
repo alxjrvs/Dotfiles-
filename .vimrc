@@ -24,7 +24,8 @@ noremap ;; ;
  augroup END
 
 "Wrapping Words
+
 set wrap
 set lbr
-set formatoptions=1
+
 
