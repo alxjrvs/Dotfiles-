@@ -4,6 +4,7 @@ set ruler
 set wrap
 set hidden      "improve history and buffer
 set history=1000
+filetype plugin on  
 
 set tabstop=4 "tabs settings
 set softtabstop=4 
@@ -38,7 +39,5 @@ imap <C-Insert> <ESC>"*yygi
 nmap <S-Insert> "*p
 imap <S-Insert> <C-R>*
 
-"Vim Spellcheck Bindings 
-
-"setlocal spell spelllang=en_us
-
+"Pydiction stuff
+let g:pydiction_location = '/home/your_username/.vim/pydict/complete-dict'
