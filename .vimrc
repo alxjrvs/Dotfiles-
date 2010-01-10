@@ -19,8 +19,8 @@ noremap ;; ;
 "For the Markdown Text
  augroup mkd
 
-  autocmd BufRead *.mkd  set ai formatoptions=tcroqn2 comments=n:&gt;
-
+  autocmd BufRead *.mkd  set ai formatoptions=tcroqn2 comments=n:&g spell spelllang=en_us
+    
  augroup END
 
 "Wrapping Words
@@ -40,5 +40,5 @@ imap <S-Insert> <C-R>*
 
 "Vim Spellcheck Bindings 
 
-setlocal spell spelllang=en_us
+"setlocal spell spelllang=en_us
 

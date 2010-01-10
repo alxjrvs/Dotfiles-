@@ -5,4 +5,5 @@ alias up='sudo aptitude update && sudo aptitude safe-upgrade'
 #Git Alias
 alias gd='git commit -a && git push'   
 alias gpom='git pull origin master'
+alias g?='git status'
 alias gp='git pull'
