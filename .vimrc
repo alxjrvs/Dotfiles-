@@ -29,15 +29,4 @@ noremap ;; ;
 set wrap
 set lbr
 
-"copy whole buffer to clipboard
-map <C-c><C-c> gg"*yG``
-imap <C-c><C-c> <ESC>gg"*yGgi
 
-" Windows like copy&paste
-nmap <C-Insert> "*yy
-imap <C-Insert> <ESC>"*yygi
-nmap <S-Insert> "*p
-imap <S-Insert> <C-R>*
-
-"Pydiction stuff
-let g:pydiction_location = '/home/your_username/.vim/pydict/complete-dict'
