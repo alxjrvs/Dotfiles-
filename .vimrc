@@ -7,7 +7,7 @@ set history=1000
 set number
 filetype plugin on  
 
-let g:pydiction_location = 'home/alxjrvs/.vim/after/ftplugin/pydiction/complete-dict'
+let g:pydiction_location = '/home/alxjrvs/.vim/after/ftplugin/pydiction/complete-dict'
 let g:pydiction_menu_height = 20
 
 
