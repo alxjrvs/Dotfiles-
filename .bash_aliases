@@ -1,6 +1,7 @@
 #This is the wrong way to do things 
 alias apt='sudo aptitude install' 
 alias up='sudo aptitude update && sudo aptitude safe-upgrade'
+alias search='sudo apt-cache search'
 
 #get to the dreamhost FTP 
 

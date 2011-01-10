@@ -1,4 +1,7 @@
 syn on
+set t_Co=256
+let g:zenburn_high_Contrast=1
+colorscheme zenburn
 set nocompatible "don't need to keep compatibility with Vi
 set ruler
 set wrap
