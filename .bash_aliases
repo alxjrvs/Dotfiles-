@@ -4,7 +4,7 @@ alias up='sudo aptitude update && sudo aptitude safe-upgrade'
 alias search='sudo apt-cache search'
 alias la='ls -a'
 alias ..='cd ..'
-alias code='cd /home/alxjrvs/Code/Django'
+alias code='cd /home/alxjrvs/Code/'
 
 #get to the dreamhost FTP 
 
@@ -15,4 +15,4 @@ alias dream='cd ~/.gvfs/ftp\ as\ alxjrvs\ on\ lions.dreamhost.com/'
 alias gd='git commit -a && git push'   
 alias gpom='git push origin master'
 alias g?='git status'
-alias gp='git pull'
+alias gpum='git pull'
