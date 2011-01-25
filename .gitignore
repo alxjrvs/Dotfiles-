@@ -25,6 +25,7 @@
 !.vim/doc/*
 !.vim/ftplugin/*
 !.vim/plugin/*
+!.vim/colors/*
 !.vim/syntax/*
 # Vim settings
 !.vimrc
