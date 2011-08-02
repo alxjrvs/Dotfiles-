@@ -10,6 +10,11 @@ alias code='cd /home/alxjrvs/Code/'
 
 alias dream='cd ~/.gvfs/ftp\ as\ alxjrvs\ on\ lions.dreamhost.com/'
 
+#Enable Writing mode
+
+alias lf='cd /home/alxjrvs/Dropbox/Writing/lf'
+alias sp='cd /home/alxjrvs/Dropbox/Writing/spndxls'
+alias write='cd /home/alxjrvs/Dropbox/Writing/'
 
 #Git Alias
 alias gd='git commit -a && git push'   
