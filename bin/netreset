@@ -1,0 +1,5 @@
+#!/bin/bash
+
+sudo modprobe -r r8192se_pci
+sleep 30
+sudo modprobe r8192se_pci
