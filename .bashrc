@@ -182,4 +182,6 @@ function set_prompt() {
 export PROMPT_COMMAND=set_prompt
 PAGER="vim -"
 MANPAGER="vim -c '%!col -b' -c 'set ft=man nomod nolist' -c 'set nomodifiable' -"
-export PATH=$PATH:/bashexport
+export PATH=$PATH:~/bin/
+
+
