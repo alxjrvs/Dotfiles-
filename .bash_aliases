@@ -6,9 +6,9 @@ alias la='ls -a'
 alias ..='cd ..'
 alias code='cd /home/alxjrvs/Code/'
 
-#get to the dreamhost FTP 
+#get to the dreamhost SSH!  
 
-alias dream='cd ~/.gvfs/ftp\ as\ alxjrvs\ on\ lions.dreamhost.com/'
+alias dream='ssh alxjrvs@lions.dreamhost.com'
 
 #Enable Writing mode
 
