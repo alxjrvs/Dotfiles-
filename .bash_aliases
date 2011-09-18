@@ -10,6 +10,10 @@ alias code='cd /home/alxjrvs/Code/'
 
 alias dream='ssh alxjrvs@lions.dreamhost.com'
 
+#Go talk to 8t88
+
+88 ='cd /media/8t88'
+
 #Enable Writing mode
 
 alias lf='cd /home/alxjrvs/Dropbox/Writing/lf'
