@@ -1,9 +1,3 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =7
-let g:netrw_dirhist_1='/home/alxjrvs/Code/Django/oneville'
-let g:netrw_dirhist_2='/home/alxjrvs/Code/Django'
-let g:netrw_dirhist_3='/home/alxjrvs/Code'
-let g:netrw_dirhist_4='/home/alxjrvs'
-let g:netrw_dirhist_5='/home'
-let g:netrw_dirhist_6='/'
-let g:netrw_dirhist_7='/home/alxjrvs/Code/Django/mysite'
+let g:netrw_dirhist_cnt =1
+let g:netrw_dirhist_1='/home/alxjrvs/Code/pullist/templates/list'
