@@ -43,3 +43,6 @@ let mapleader = " "
 nnoremap <leader>ev <C-w><C-v><C-l>:e $MYVIMRC<cr> 
 "" open new v split and switch to it
 nnoremap <leader>w <C-w>v<C-w>l 
+
+let g:vimroom_background = "black"
+let g:vimroom_navigational_key = 1
