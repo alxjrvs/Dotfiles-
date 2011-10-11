@@ -26,11 +26,10 @@ map ; :
 noremap ;; ;
 
 "For the Markdown Text
- augroup mkd
-
-  autocmd BufRead *.mkd  set ai formatoptions=tcroqn2 comments=n:&g spell spelllang=en_us
-    
- augroup END
+augroup mkd
+autocmd BufRead *.mkd  set ai formatoptions=tcroqn2 comments=n:&g spell spelllang=en_us nu! 
+augroup END
+map <leader>p :Mm<CR>
 
 "Wrapping Words
 
@@ -46,3 +45,5 @@ nnoremap <leader>w <C-w>v<C-w>l
 
 let g:vimroom_background = "black"
 let g:vimroom_navigational_key = 1
+
+
