@@ -48,4 +48,4 @@ let g:vimroom_navigational_key = 1
 
 " Lets me use Vim Markdown Preview in linux. Hooray!
 "
-let g:VMPhtmlreader = 'xdg-open' 
+let g:VMPhtmlreader = 'firefox-bin' 
