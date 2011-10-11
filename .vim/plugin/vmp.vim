@@ -1,5 +1,3 @@
-set runtimepath+=~/.vim/plugin/vim-markdown-preview
-
 function! PreviewMKD()
   ruby << RUBY
 
@@ -17,8 +15,7 @@ function! PreviewMKD()
     VIM::Buffer.current.name.nil? ? (name = 'No Name.md') : (name = Vim::Buffer.current.name)
 
     preview_path = VIM.evaluate('&runtimepath').split(',').select{|path| path =~ /vim-markdown-preview/}.first
-    "cssfile = File.open("#{preview_path}/plugin/markdown-preview.css")
-    cssfile = File.open("#{preview_path}/stylesheets/safari-reader.css")
+    cssfile = File.open("#{preview_path}/plugin/markdown-preview.css")
     style = cssfile.read
 
     layout = <<-LAYOUT
@@ -36,14 +33,12 @@ function! PreviewMKD()
       </head>
       <body>
 
-        <div id="container">
-        <div id="centered">
-        <div id="article">
-        <div class="page">
+        <h4 id="title">
+          #{File.basename(name)}
+        </h4>
+
+        <div id="content">
           #{Kramdown::Document.new(text).to_html}
-        </div>
-        </div>
-        </div>
         </div>
       </body>
     </html>
@@ -55,13 +50,7 @@ function! PreviewMKD()
     else
       file = File.join('/tmp', File.basename(name) + '.html')
       File.open('%s' % [ file ], 'w') { |f| f.write(layout) }
-      # Open the html file
-      # Vim.command("silent !open '%s'" % [ file ])
-
-      # Create and open a PDF file
-      pdffile = File.join('/tmp', File.basename(name) + '.pdf')
-      system("wkpdf --source #{file} --output #{pdffile}")
-      Vim.command("silent !open '%s'" % [ pdffile ])
+      Vim.command("silent !open '%s'" % [ file ])
     end
 RUBY
 endfunction
