@@ -1,15 +1,13 @@
 syn on
 set t_Co=256
-let g:zenburn_high_Contrast=1
-colorscheme zenburn
 set nocompatible "don't need to keep compatibility with Vi
 set ruler
 set wrap
 set hidden      "improve history and buffer
 set history=1000
 set number
-filetype plugin on  
-
+:filetype plugin on
+colorscheme ambient
 let g:pydiction_location = '/home/alxjrvs/.vim/after/ftplugin/pydiction/complete-dict'
 let g:pydiction_menu_height = 20
 
@@ -27,7 +25,7 @@ noremap ;; ;
 
 "For the Markdown Text
 augroup mkd
-autocmd BufRead *.mkd  set ai formatoptions=tcroqn2 comments=n:&g spell spelllang=en_us nu! 
+autocmd BufRead *.mkd  set ai formatoptions=tcroqn2 comments=n:&g spell spelllang=en_us nu!  
 augroup END
 map <leader>p :Mm<CR>
 
@@ -43,9 +41,11 @@ nnoremap <leader>ev <C-w><C-v><C-l>:e $MYVIMRC<cr>
 "" open new v split and switch to it
 nnoremap <leader>w <C-w>v<C-w>l 
 
-let g:vimroom_background = "black"
-let g:vimroom_navigational_key = 1
+"let g:vimroom_navigational_key = 1
+let g:vimroom_ctermbackground = "bg"
+let g:vimroom_guibackground = "bg"
 
-" Lets me use Vim Markdown Preview in linux. Hooray!
-"
-let g:VMPhtmlreader = 'firefox-bin' 
+"For Snipmate
+au BufNewFile,BufRead *.mkd setlocal filetype=markdown
+autocmd FileType python set ft=python.django " For SnipMate
+autocmd FileType html set ft=htmldjango.html " For SnipMate
