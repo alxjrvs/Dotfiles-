@@ -41,9 +41,9 @@ nnoremap <leader>ev <C-w><C-v><C-l>:e $MYVIMRC<cr>
 "" open new v split and switch to it
 nnoremap <leader>w <C-w>v<C-w>l 
 
-"let g:vimroom_navigational_key = 1
+let g:vimroom_navigational_key = 1
 let g:vimroom_ctermbackground = "bg"
-let g:vimroom_guibackground = "bg"
+let g:vimroom_guibackground = "black"
 
 "For Snipmate
 au BufNewFile,BufRead *.mkd setlocal filetype=markdown
