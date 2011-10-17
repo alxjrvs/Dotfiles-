@@ -25,3 +25,6 @@ alias gd='git commit -a && git push'
 alias gpom='git push origin master'
 alias g?='git status'
 alias gpum='git pull origin master'
+
+#Todo.txt shell
+alias t='./todo.sh'
