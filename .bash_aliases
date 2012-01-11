@@ -28,3 +28,4 @@ alias gpum='git pull origin master'
 
 #Todo.txt shell
 alias t='./todo.sh'
+
