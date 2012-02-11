@@ -1,5 +1,8 @@
 # And now, a test - completely apeing his bashrc. His being, Seth Woodworth. 
 
+# launch tmux on launch
+ [[ $TERM != "screen" ]] && tmux && exit
+
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
 
