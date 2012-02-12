@@ -1,7 +1,7 @@
 # And now, a test - completely apeing his bashrc. His being, Seth Woodworth. 
 
-# launch tmux on launch
- [[ $TERM != "screen" ]] && tmux && exit
+#   # launch tmux on launch
+#    [[ $TERM != "screen" ]] && tmux && exit
 
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
@@ -27,10 +27,10 @@ if [ -z "$debian_chroot" ] && [ -r /etc/debian_chroot ]; then
     debian_chroot=$(cat /etc/debian_chroot)
 fi
 
-# set a fancy prompt (non-color, unless we know we "want" color)
-case "$TERM" in
-    xterm-color) color_prompt=yes;;
-esac
+#   # set a fancy prompt (non-color, unless we know we "want" color)
+#   case "$TERM" in
+#       xterm-color) color_prompt=yes;;
+#   esac
 
 # uncomment for a colored prompt, if the terminal has the capability; turned
 # off by default to not distract the user: the focus in a terminal window
