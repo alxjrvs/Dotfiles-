@@ -19,7 +19,7 @@ set expandtab
 set smarttab
 
 "Key Mappings I figured out with the help of Mr. Internet
-imap ii <esc>
+"imap ii <esc>
 map ; :
 noremap ;; ;
 
