@@ -25,6 +25,7 @@
 !.vim/colors/*
 !.vim/syntax/*
 # Vim settings
+!.vim/snippets/*
 !.vimrc
 1.vim/*/*
  
