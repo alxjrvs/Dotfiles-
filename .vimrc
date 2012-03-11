@@ -7,7 +7,7 @@ set hidden      "improve history and buffer
 set history=1000
 set number
 :filetype plugin on
-colorscheme blackboard
+colorscheme ir_black
 let g:pydiction_location = '~/.vim/after/ftplugin/pydiction/complete-dict'
 let g:pydiction_menu_height = 20
 
