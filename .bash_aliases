@@ -29,3 +29,6 @@ alias gpum='git pull origin master'
 #Todo.txt shell
 alias t='./todo.sh'
 
+#KILL ALL SWP FILES
+
+alias swpk='rm .*.*.swp'

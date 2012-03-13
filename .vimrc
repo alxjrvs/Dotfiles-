@@ -11,6 +11,11 @@ colorscheme ir_black
 let g:pydiction_location = '~/.vim/after/ftplugin/pydiction/complete-dict'
 let g:pydiction_menu_height = 20
 
+"For Pathogen." 
+call pathogen#infect()
+
+"For Ragtag
+"let g:ragtag_global_maps = 1
 
 set tabstop=4 "tabs settings
 set softtabstop=4 
@@ -46,6 +51,6 @@ let g:vimroom_ctermbackground = "bg"
 let g:vimroom_guibackground = "black"
 
 "For Snipmate
-au BufNewFile,BufRead *.mkd setlocal filetype=markdown
-autocmd FileType python set ft=python.django " For SnipMate
-autocmd FileType html set ft=htmldjango.html " For SnipMate
+"au BufNewFile,BufRead *.mkd setlocal filetype=markdown
+"autocmd FileType python set ft=python.django " For SnipMate
+"autocmd FileType html set ft=htmldjango.html " For SnipMate

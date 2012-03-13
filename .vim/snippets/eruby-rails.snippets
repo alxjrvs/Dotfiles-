@@ -2,10 +2,6 @@ snippet cs
 	<%= collection_select <+object+>, <+method+>, <+collection+>, <+value_method+>, <+text_method+><+, <+[options]+>, <+[html_options]+>+> %>
 snippet ct
 	<%= content_tag '${1:DIV}', ${2:content}${3:,options} -%>
-snippet ff
-	<% form_for @${1:model} do |f| -%>
-		${2}
-	<% end -%>
 snippet ffcb
 	<%= ${1:f}.check_box :${2:attribute} %>
 snippet ffe
@@ -18,8 +14,7 @@ snippet ffff
 	<%= ${1:f}.file_field :${2:attribute} %>
 snippet ffhf
 	<%= ${1:f}.hidden_field :${2:attribute} %>
-snippet ffl
-	<%= ${1:f}.label :${2:attribute}, '${3:$2}' %>
+snippet ffl <%= ${1:f}.label :${2:attribute}, '${3:$2}' %>
 snippet ffpf
 	<%= ${1:f}.password_field :${2:attribute} %>
 snippet ffrb
@@ -68,3 +63,8 @@ snippet slt
 	<%= stylesheet_link_tag ${1::all}, :cache => ${2:true} %>
 snippet sslt
 	<%= stylesheet_link_tag "${1}" %>
+snippet ltcs
+	<link href="/styles.css" media="screen" rel="stylesheet" type="text/css" media="screen, projection" />
+
+snippet <% 
+	<%= @${1} %>${2}
