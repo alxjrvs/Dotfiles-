@@ -12,7 +12,7 @@ let g:pydiction_location = '~/.vim/after/ftplugin/pydiction/complete-dict'
 let g:pydiction_menu_height = 20
 
 "For Pathogen." 
-call pathogen#infect()
+"call pathogen#infect()"
 
 "For Ragtag
 "let g:ragtag_global_maps = 1
