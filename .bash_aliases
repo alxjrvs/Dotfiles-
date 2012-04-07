@@ -16,9 +16,9 @@ alias 88='cd /media/8t88'
 
 #Enable Writing mode
 
-alias lf='cd /home/alxjrvs/Writing/lf'
-alias sp='cd /home/alxjrvs/Writing/spndxls'
-alias write='cd /home/alxjrvs/Writing/'
+alias lf='cd ~/Writing/lf'
+alias sp='cd ~/Writing/spndxls'
+alias write='cd ~/Writing/'
 
 #Git Alias
 alias gd='git commit -a && git push'   
