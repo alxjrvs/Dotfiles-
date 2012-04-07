@@ -4,7 +4,7 @@ alias up='sudo aptitude update && sudo aptitude safe-upgrade'
 alias search='sudo apt-cache search'
 alias la='ls -a'
 alias ..='cd ..'
-alias code='cd /home/alxjrvs/Code/'
+alias code='cd ~/Code/'
 
 #get to the dreamhost SSH!  
 
