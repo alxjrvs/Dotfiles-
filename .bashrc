@@ -188,3 +188,5 @@ MANPAGER="vim -c '%!col -b' -c 'set ft=man nomod nolist' -c 'set nomodifiable' -
 export PATH=$PATH:~/bin/
 
 
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
