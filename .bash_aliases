@@ -4,7 +4,7 @@ alias up='sudo aptitude update && sudo aptitude safe-upgrade'
 alias search='sudo apt-cache search'
 alias la='ls -a'
 alias ..='cd ..'
-alias code='cd /home/alxjrvs/Code/'
+alias code='cd ~/Code/'
 
 #get to the dreamhost SSH!  
 
@@ -16,9 +16,9 @@ alias 88='cd /media/8t88'
 
 #Enable Writing mode
 
-alias lf='cd /home/alxjrvs/Writing/lf'
-alias sp='cd /home/alxjrvs/Writing/spndxls'
-alias write='cd /home/alxjrvs/Writing/'
+alias lf='cd ~/Writing/lf'
+alias sp='cd ~/Writing/spndxls'
+alias write='cd ~/Writing/'
 
 #Git Alias
 alias gd='git commit -a && git push'   
