@@ -27,6 +27,7 @@ set smarttab
 "imap ii <esc>
 map ; :
 noremap ;; ;
+:map <leader>v  
 
 imap <C-a> <esc>
 
