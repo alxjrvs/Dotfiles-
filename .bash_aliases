@@ -32,3 +32,5 @@ alias t='./todo.sh'
 #KILL ALL SWP FILES
 
 alias swpk='rm .*.*.swp'
+
+alias gemgone='gem list | cut -d" " -f1 | xargs gem uninstall -aIx'
