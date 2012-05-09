@@ -30,5 +30,7 @@ alias gpum='git pull origin master'
 alias t='./todo.sh'
 
 #KILL ALL SWP FILES
-
 alias swpk='rm .*.*.swp'
+
+# Heavyink Shortcuts
+alias runtests='rm TestResults.txt && rake test:units >> TestResults.txt'
