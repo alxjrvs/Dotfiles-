@@ -7,6 +7,7 @@
 !.bashrc
 !.profile
 !.bash_aliases
+!.bash_profile
  
 # Git aliases, identification info
 !.gitconfig
