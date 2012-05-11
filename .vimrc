@@ -17,11 +17,13 @@ let g:pydiction_menu_height = 20
 "For Ragtag
 "let g:ragtag_global_maps = 1
 
-set tabstop=4 "tabs settings
-set softtabstop=4 
-set shiftwidth=4 
-set expandtab 
-set smarttab
+set ts =2 
+
+"set tabstop=2 "tabs settings
+"set softtabstop=2 
+"set shiftwidth=4 
+"set expandtab 
+"set smarttab
 
 "Key Mappings I figured out with the help of Mr. Internet
 "imap ii <esc>
