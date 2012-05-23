@@ -33,4 +33,6 @@ alias t='./todo.sh'
 alias swpk='rm .*.*.swp'
 
 # Heavyink Shortcuts
-alias runtests='rm TestResults.txt && rake test:units >> TestResults.txt'
+alias rununits='rake test:units > UnitResults.txt'
+alias runint='rake test:units > IntResults.txt'
+alias runfunc='rake test:functionals > FuncResults.txt'
