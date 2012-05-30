@@ -34,3 +34,5 @@ alias t='./todo.sh'
 alias swpk='rm .*.*.swp'
 
 alias gemgone='gem list | cut -d" " -f1 | xargs gem uninstall -aIx'
+
+alias ruhrack='rackup -p9292'
