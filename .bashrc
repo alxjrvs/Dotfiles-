@@ -1,6 +1,6 @@
 # And now, a test - completely apeing his bashrc. His being, Seth Woodworth. 
 
-#   # launch tmux on launch
+v   # launch tmux on launch
 #    [[ $TERM != "screen" ]] && tmux && exit
 
 # If not running interactively, don't do anything
@@ -189,4 +189,4 @@ export PATH=$PATH:~/bin/
 
 
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+#PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
