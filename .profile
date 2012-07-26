@@ -21,3 +21,5 @@ if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
 
+
+[[ -d "${HOME}/bin" ]] && export PATH="${HOME}/bin:${PATH}"

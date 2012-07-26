@@ -17,11 +17,12 @@ let g:pydiction_menu_height = 20
 "For Ragtag
 "let g:ragtag_global_maps = 1
 
-set tabstop=4 "tabs settings
-set softtabstop=4 
-set shiftwidth=4 
-set expandtab 
-set smarttab
+set softtabstop=2
+set shiftwidth=2
+set tabstop=2
+set expandtab
+
+set list listchars=tab:·\ ,trail:•,nbsp:•
 
 "Key Mappings I figured out with the help of Mr. Internet
 "imap ii <esc>
@@ -42,6 +43,7 @@ set wrap
 set lbr
 
 let mapleader = " "
+nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
 
 " edit vimrc in a virtical split
 nnoremap <leader>ev <C-w><C-v><C-l>:e $MYVIMRC<cr> 
