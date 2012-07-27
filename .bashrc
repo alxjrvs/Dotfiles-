@@ -1,6 +1,6 @@
 # And now, a test - completely apeing his bashrc. His being, Seth Woodworth. 
 
-v   # launch tmux on launch
+   # launch tmux on launch
 #    [[ $TERM != "screen" ]] && tmux && exit
 
 # If not running interactively, don't do anything
