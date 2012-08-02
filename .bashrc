@@ -1,6 +1,6 @@
 # And now, a test - completely apeing his bashrc. His being, Seth Woodworth. 
 
-v   # launch tmux on launch
+   # launch tmux on launch
 #    [[ $TERM != "screen" ]] && tmux && exit
 
 # If not running interactively, don't do anything
@@ -185,7 +185,9 @@ function set_prompt() {
 export PROMPT_COMMAND=set_prompt
 PAGER="vim -"
 MANPAGER="vim -c '%!col -b' -c 'set ft=man nomod nolist' -c 'set nomodifiable' -"
+export PATH=$PATH:~/local/bin/
 export PATH=$PATH:~/bin/
+
 
 
 

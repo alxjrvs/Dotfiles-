@@ -36,3 +36,6 @@ alias swpk='rm .*.*.swp'
 alias gemgone='gem list | cut -d" " -f1 | xargs gem uninstall -aIx'
 
 alias ruhrack='rackup -p9292'
+alias reload='rake db:drop && rake db:migrate && rake db:seed'
+alias herokupush='git push heroku master'
+alias ctags="`brew --prefix`/bin/ctags"

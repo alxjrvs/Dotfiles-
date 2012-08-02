@@ -31,7 +31,7 @@ snippet crw
 snippet defcreate
 	def create
 		@${1:model_class_name} = ${2:ModelClassName}.new(params[:$1])
-	
+
 		respond_to do |wants|
 			if @$1.save
 				flash[:notice] = '$2 was successfully created.'
@@ -47,7 +47,7 @@ snippet defdestroy
 	def destroy
 		@${1:model_class_name} = ${2:ModelClassName}.find(params[:id])
 		@$1.destroy
-	
+
 		respond_to do |wants|
 			wants.html { redirect_to($1s_url) }
 			wants.xml  { head :ok }
@@ -60,7 +60,7 @@ snippet defedit
 snippet defindex
 	def index
 		@${1:model_class_name} = ${2:ModelClassName}.all
-	
+
 		respond_to do |wants|
 			wants.html # index.html.erb
 			wants.xml  { render :xml => @$1s }
@@ -69,7 +69,7 @@ snippet defindex
 snippet defnew
 	def new
 		@${1:model_class_name} = ${2:ModelClassName}.new
-	
+
 		respond_to do |wants|
 			wants.html # new.html.erb
 			wants.xml  { render :xml => @$1 }
@@ -78,7 +78,7 @@ snippet defnew
 snippet defshow
 	def show
 		@${1:model_class_name} = ${2:ModelClassName}.find(params[:id])
-	
+
 		respond_to do |wants|
 			wants.html # show.html.erb
 			wants.xml  { render :xml => @$1 }
@@ -87,7 +87,7 @@ snippet defshow
 snippet defupdate
 	def update
 		@${1:model_class_name} = ${2:ModelClassName}.find(params[:id])
-	
+
 		respond_to do |wants|
 			if @$1.update_attributes(params[:$1])
 				flash[:notice] = '$2 was successfully updated.'
@@ -159,13 +159,9 @@ snippet mct
 	end
 snippet migration
 	class ${1:`Snippet_MigrationNameFromFilename()`} < ActiveRecord::Migration
-		def self.up
+		def change
 			${2}
 		end
-	
-		def self.down
-		end
-	end
 snippet mp
 	map(&:${1:id})
 snippet mrc
@@ -243,15 +239,15 @@ snippet sha1
 snippet sweeper
 	class ${1:ModelClassName}Sweeper < ActionController::Caching::Sweeper
 		observe $1
-	
+
 		def after_save(${2:model_class_name})
 			expire_cache($2)
 		end
-	
+
 		def after_destroy($2)
 			expire_cache($2)
 		end
-	
+
 		def expire_cache($2)
 			expire_page
 		end

@@ -58,3 +58,12 @@ let g:vimroom_guibackground = "black"
 "au BufNewFile,BufRead *.mkd setlocal filetype=markdown
 "autocmd FileType python set ft=python.django " For SnipMate
 "autocmd FileType html set ft=htmldjango.html " For SnipMate
+
+:au FocusLost * :wa
+
+let Tlist_Ctags_Cmd = "/usr/bin/ctags"
+let Tlist_WinWidth = 50
+map <F4> :TlistToggle<cr>
+map <F8> :!/usr/bin/ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
+
+call pathogen#infect()
