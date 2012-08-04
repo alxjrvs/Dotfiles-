@@ -1,5 +1,8 @@
 #This is the wrong way to do things 
 alias apt='sudo aptitude install' 
+
+alias yummy='sudo yum install'
+
 alias up='sudo aptitude update && sudo aptitude safe-upgrade'
 alias search='sudo apt-cache search'
 alias la='ls -a'
