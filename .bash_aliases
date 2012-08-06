@@ -43,3 +43,5 @@ alias ruhrack='rackup -p9292'
 alias reload='rake db:drop && rake db:migrate && rake db:seed'
 alias herokupush='git push heroku master'
 alias ctags="`brew --prefix`/bin/ctags"
+alias tks="tmux kill-server"
+alias tas="tmux attach-session -t"
