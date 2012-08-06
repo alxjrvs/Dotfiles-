@@ -11,6 +11,12 @@ colorscheme ir_black
 let g:pydiction_location = '~/.vim/after/ftplugin/pydiction/complete-dict'
 let g:pydiction_menu_height = 20
 
+"For Pathogen." 
+"call pathogen#infect()"
+
+"For Ragtag
+"let g:ragtag_global_maps = 1
+
 set softtabstop=2
 set shiftwidth=2
 set tabstop=2
@@ -19,7 +25,7 @@ set expandtab
 set list listchars=tab:·\ ,trail:•,nbsp:•
 
 "Key Mappings I figured out with the help of Mr. Internet
-""imap ii <esc>
+"imap ii <esc>
 map ; :
 noremap ;; ;
 
@@ -27,8 +33,7 @@ imap <C-a> <esc>
 
 "For the Markdown Text
 augroup mkd
-autocmd BufRead *.mkd  set ai formatoptions=tcroqn2 comments=n:&g spell
-spelllang=en_us nu!  
+autocmd BufRead *.mkd  set ai formatoptions=tcroqn2 comments=n:&g spell spelllang=en_us nu!  
 augroup END
 map <leader>p :Mm<CR>
 
@@ -40,7 +45,7 @@ set lbr
 let mapleader = " "
 nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
 
-edit vimrc in a virtical split
+" edit vimrc in a virtical split
 nnoremap <leader>ev <C-w><C-v><C-l>:e $MYVIMRC<cr> 
 "" open new v split and switch to it
 nnoremap <leader>w <C-w>v<C-w>l 
@@ -62,8 +67,7 @@ map <F4> :TlistToggle<cr>
 map <F8> :!/usr/bin/ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
 
 call pathogen#infect()
-hi CursorLine   cterm=NONE ctermbg=darkblue ctermfg=white guibg=darkred
-guifg=white
+hi CursorLine   cterm=NONE ctermbg=darkblue ctermfg=white guibg=darkred guifg=white
 set cursorline
 
 
