@@ -11,12 +11,6 @@ colorscheme ir_black
 let g:pydiction_location = '~/.vim/after/ftplugin/pydiction/complete-dict'
 let g:pydiction_menu_height = 20
 
-"For Pathogen." 
-"call pathogen#infect()"
-
-"For Ragtag
-"let g:ragtag_global_maps = 1
-
 set softtabstop=2
 set shiftwidth=2
 set tabstop=2
@@ -66,7 +60,6 @@ let Tlist_WinWidth = 50
 map <F4> :TlistToggle<cr>
 map <F8> :!/usr/bin/ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
 
-call pathogen#infect()
 hi CursorLine   cterm=NONE ctermbg=darkblue ctermfg=white guibg=darkred guifg=white
 set cursorline
 
