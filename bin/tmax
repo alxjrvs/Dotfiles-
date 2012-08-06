@@ -1,0 +1,13 @@
+#!/bin/bash
+tmux new-session -d -s Rails 
+
+tmux new-window -t Rails:1 -n 'Server'
+tmux new-window -t Rails:2 -n 'Model'
+tmux new-window -t Rails:3 -n 'View'
+tmux new-window -t Rails:4 -n 'Contoller'
+tmux new-window -t Rails:5 -n 'Migration'
+tmux new-window -t Rails:6 -n 'Console'
+tmux new-window -t Rails:7 -n 'Git'
+
+tmux select-window -t Rails:1
+tmux -2 attach-session -t Rails
