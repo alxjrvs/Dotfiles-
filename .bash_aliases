@@ -1,5 +1,8 @@
 #This is the wrong way to do things 
 alias apt='sudo aptitude install' 
+
+alias yummy='sudo yum install'
+
 alias up='sudo aptitude update && sudo aptitude safe-upgrade'
 alias search='sudo apt-cache search'
 alias la='ls -a'
@@ -35,6 +38,7 @@ alias swpk='rm .*.*.swp'
 
 alias gemgone='gem list | cut -d" " -f1 | xargs gem uninstall -aIx'
 
+alias reload='rake db:drop && rake db:migrate && rake db:seed'
 alias ruhrack='rackup -p9292'
 alias reload='rake db:drop && rake db:migrate && rake db:seed'
 alias herokupush='git push heroku master'
