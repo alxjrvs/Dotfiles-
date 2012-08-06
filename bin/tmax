@@ -10,4 +10,4 @@ tmux new-window -t Rails:5 -n 'Console'
 tmux new-window -t Rails:6 -n 'Git'
 
 tmux select-window -t Rails:1
-tmux -2 attach-session -t Railstmux -2 attach-session -t Rails
+tmux -2 attach-session -t Rails
