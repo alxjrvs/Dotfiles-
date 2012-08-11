@@ -32,7 +32,10 @@ augroup END
 map <leader>p :Mm<CR>
 
 "Wrapping Words
-
+" handier esc
+ inoremap kj <esc>
+" " must use handier esc
+" inoremap <esc> <nop>
 set wrap
 set lbr
 
