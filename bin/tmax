@@ -1,14 +1,14 @@
 #!/bin/bash
-tmux new-session -d -s Rails
+tmux new-session -d -s $1
 
-tmux rename-window -t Rails:0  'Server'
-tmux new-window -t Rails:1 -n 'Model'
-tmux new-window -t Rails:2 -n 'View'
-tmux new-window -t Rails:3 -n 'Contoller'
-tmux new-window -t Rails:4 -n 'Migration'
-tmux new-window -t Rails:5 -n 'Tests'
-tmux new-window -t Rails:6 -n 'Console'
-tmux new-window -t Rails:7 -n 'Git'
+tmux rename-window -t $1:0  'Server'
+tmux new-window -t $1:1 -n 'Model'
+tmux new-window -t $1:2 -n 'View'
+tmux new-window -t $1:3 -n 'Contoller'
+tmux new-window -t $1:4 -n 'Migration'
+tmux new-window -t $1:5 -n 'Tests'
+tmux new-window -t $1:6 -n 'Console'
+tmux new-window -t $1:7 -n 'Git'
 
-tmux select-window -t Rails:1
-tmux -2 attach-session -t Rails
+tmux select-window -t $1:1
+tmux -2 attach-session -t $1
