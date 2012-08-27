@@ -1,4 +1,7 @@
-#!/bin/bashcost
+#!/bin/bash
+
+cd ~/Code/$1
+
 tmux new-session -d -s $1
 
 tmux rename-window -t $1:0  'Server'
@@ -9,6 +12,15 @@ tmux new-window -t $1:4 -n 'Migration'
 tmux new-window -t $1:5 -n 'Tests'
 tmux new-window -t $1:6 -n 'Console'
 tmux new-window -t $1:7 -n 'Git'
+
+tmux send-keys -t $1:0  "rails s ; clear" C-m
+tmux send-keys -t $1:1  "cd app/models; clear" C-m
+tmux send-keys -t $1:2  "cd app/views; clear" C-m
+tmux send-keys -t $1:3  "cd app/controler; clear" C-m
+tmux send-keys -t $1:4  "cd db; clear" C-m
+tmux send-keys -t $1:5  "guard; clear"  C-m
+tmux send-keys -t $1:6  "rails c; clear" C-m
+tmux send-keys -t $1:7  "" C-m
 
 tmux select-window -t $1:1
 tmux -2 attach-session -t $1
