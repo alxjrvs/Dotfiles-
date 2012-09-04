@@ -3,7 +3,7 @@
 "nerd_tree
 "rails
 "snipMate
-"snipMateInterface
+"syntastic
 "vimiux
 "vimroom
 "vmp
@@ -72,17 +72,8 @@ let g:vimroom_navigational_key = 1
 let g:vimroom_ctermbackground = "bg"
 let g:vimroom_guibackground = "black"
 
-"For Snipmate
-"au BufNewFile,BufRead *.mkd setlocal filetype=markdown
-"autocmd FileType python set ft=python.django " For SnipMate
-"autocmd FileType html set ft=htmldjango.html " For SnipMate
 
 :au FocusLost * :wa
-
-let Tlist_Ctags_Cmd = "/usr/bin/ctags"
-let Tlist_WinWidth = 50
-map <F4> :TlistToggle<cr>
-map <F8> :!/usr/bin/ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
 
 hi CursorLine   cterm=NONE ctermbg=darkblue ctermfg=white guibg=darkred guifg=white
 
@@ -104,3 +95,7 @@ map rx :CloseVimTmuxPanes
 
 " Interrupt any command running in the runner pane
 map rs :InterruptVimTmuxRunner
+
+" tagbar
+let g:tagbar_ctags_bin='/usr/local/bin/ctags'
+noremap  <Leader>t :TagbarToggle <CR>
