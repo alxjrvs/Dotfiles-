@@ -18,7 +18,7 @@
 
 #Vimrc
 !.vimrc
-!.vim/runinstall.sh
+!./.vim/runinstall.sh
 
 # Aptitude config
 !.aptitude
@@ -31,6 +31,8 @@
 !.gemrc
 
 !./scripts/*
+
+!./bin/*
 
 # Zshell
 !.zshrc
