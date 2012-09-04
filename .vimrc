@@ -1,24 +1,3 @@
-"Currently installed plugins
-"nerd_commenter
-"nerd_tree
-"rails
-"snipMate
-"syntastic
-"vimiux
-"vimroom
-"vmp
-"
-"
-"and
-"
-"Pathogen
-"
-"
-"Colors
-"
-"ir_black
-
-
 call pathogen#infect()
 syn on
 set t_Co=256
@@ -32,6 +11,8 @@ set number
 colorscheme ir_black+
 let g:pydiction_location = '~/.vim/after/ftplugin/pydiction/complete-dict'
 let g:pydiction_menu_height = 20
+
+let g:snippets_dir = '~/.vim/bundle/vim-snipmate/syntax/'
 
 set softtabstop=2
 set shiftwidth=2
