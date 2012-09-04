@@ -6,8 +6,6 @@ git clone $1
 
 echo 'git clone' $1 >> ~/bin/runinstall.sh
 
-#git clone $1 ~/.vim/bundle/
-
 
 
 
