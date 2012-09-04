@@ -19,9 +19,6 @@ DISABLE_AUTO_TITLE=true
 #This is the wrong way to do things
 alias apt='sudo aptitude install'
 
-
-alias tmax='~/bin/tmax'
-
 alias yummy='sudo yum install'
 
 alias up='sudo aptitude update && sudo aptitude safe-upgrade'
@@ -89,3 +86,5 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 export PATH=/Users/alxjrvs/.rvm/gems/ruby-1.9.3-p194@global/bin:/Users/alxjrvs/.rvm/gems/ruby-1.9.3-p194@global/bin:/Users/alxjrvs/.rvm/rubies/ruby-1.9.3-p194/bin:/Users/alxjrvs/.rvm/bin:/Users/alxjrvs/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/Users/alxjrvs/local/bin/:/Users/alxjrvs/bin/
+
+PATH=$PATH:$HOME/bin
