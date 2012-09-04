@@ -99,3 +99,12 @@ map rs :InterruptVimTmuxRunner
 " tagbar
 let g:tagbar_ctags_bin='/usr/local/bin/ctags'
 noremap  <Leader>t :TagbarToggle <CR>
+
+"Nerdtree
+
+function OpenNERDTree()
+  execute ":NERDTree"
+endfunction
+command -nargs=0 OpenNERDTree :call OpenNERDTree()
+
+nmap <Leader>n :OpenNERDTree<CR>
