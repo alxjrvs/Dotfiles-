@@ -2,7 +2,7 @@
 "nerd_commenter
 "nerd_tree
 "rails
-"snipMate   
+"snipMate
 "snipMateInterface
 "vimiux
 "vimroom
@@ -48,7 +48,7 @@ imap <C-a> <esc>
 
 "For the Markdown Text
 augroup mkd
-autocmd BufRead *.mkd  set ai formatoptions=tcroqn2 comments=n:&g spell spelllang=en_us nu!  
+autocmd BufRead *.mkd  set ai formatoptions=tcroqn2 comments=n:&g spell spelllang=en_us nu!
 augroup END
 map <leader>p :Mm<CR>
 
@@ -64,9 +64,9 @@ let mapleader = " "
 nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
 
 " edit vimrc in a virtical split
-nnoremap <leader>ev <C-w><C-v><C-l>:e $MYVIMRC<cr> 
+nnoremap <leader>ev <C-w><C-v><C-l>:e $MYVIMRC<cr>
 "" open new v split and switch to it
-nnoremap <leader>w <C-w>v<C-w>l 
+nnoremap <leader>w <C-w>v<C-w>l
 
 let g:vimroom_navigational_key = 1
 let g:vimroom_ctermbackground = "bg"
