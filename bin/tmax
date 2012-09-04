@@ -23,4 +23,5 @@ tmux send-keys -t $1:6  "rails c; clear" C-m
 tmux send-keys -t $1:7  "" C-m
 
 tmux select-window -t $1:1
+cd ~
 tmux -2 attach-session -t $1

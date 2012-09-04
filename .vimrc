@@ -1,3 +1,24 @@
+"Currently installed plugins
+"nerd_commenter
+"nerd_tree
+"rails
+"snipMate   
+"snipMateInterface
+"vimiux
+"vimroom
+"vmp
+"
+"and
+"
+"Pathogen
+"
+"
+"Colors
+"
+"ir_black
+
+
+call pathogen#infect()
 syn on
 set t_Co=256
 set nocompatible "don't need to keep compatibility with Vi
