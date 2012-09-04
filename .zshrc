@@ -19,6 +19,9 @@ DISABLE_AUTO_TITLE=true
 #This is the wrong way to do things
 alias apt='sudo aptitude install'
 
+
+alias tmax='~/bin/tmax'
+
 alias yummy='sudo yum install'
 
 alias up='sudo aptitude update && sudo aptitude safe-upgrade'
