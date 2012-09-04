@@ -18,7 +18,7 @@
 
 #Vimrc
 !.vimrc
-
+!.vim/runinstall.sh
 
 # Aptitude config
 !.aptitude
