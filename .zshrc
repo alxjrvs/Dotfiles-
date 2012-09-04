@@ -11,6 +11,10 @@ ZSH_THEME="theunraveler"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+#Hack to stop Zshell from renaming tmux
+DISABLE_AUTO_TITLE=true
+
+
 #Alxjrvs Aliases
 #This is the wrong way to do things
 alias apt='sudo aptitude install'
