@@ -6,6 +6,7 @@ curl -so ~/.vim/autoload/pathogen.vim \
 
 cd ~/.vim/bundle
 
+
 git clone https://github.com/scrooloose/syntastic.git
 git clone https://github.com/scrooloose/nerdcommenter.git
 git clone https://github.com/scrooloose/nerdtree.git
@@ -25,4 +26,3 @@ git clone git://github.com/kml/vim-irblack-plus.git
 git clone https://github.com/tomtom/tlib_vim.git
 git clone https://github.com/MarcWeber/vim-addon-mw-utils.git
 git clone https://github.com/honza/snipmate-snippets.git
-

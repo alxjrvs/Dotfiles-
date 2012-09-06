@@ -110,3 +110,5 @@ DISABLE_AUTO_TITLE=true
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(git github heroku osx rails rails3 ruby rvm)
 
+source $ZSH/oh-my-zsh.sh
+
