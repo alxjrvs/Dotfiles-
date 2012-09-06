@@ -1,4 +1,77 @@
-# Path to your oh-my-zsh configuration.
+#-------------------------------------------------------------
+#  Maintainer: Alex Jarvis
+#              http://alxjrvs.com - Alxjrvs@gmail.com
+#  original Creator: Itai Ferber
+#              http://itaiferber.net - hi@itaiferber.net
+#
+#  Version:  a1.0 09/05/2012
+#
+#  Sections:
+#  -> zshenv
+#  -> zsh Autocompletion
+#  -> Alxjrvs stuf
+#  Revisions:
+#  -> a1.0.0: ALxjrvs Mangling
+#  -> 1.0.0: Initial revision. Style copied from vimrc.
+# -------------------------------------------------------------
+
+# -------------------------------------------------------------
+# => zshenv
+# -------------------------------------------------------------
+source ~/.zshenv
+
+       # -------------------------------------------------------------
+       # => zsh Autocompletion
+       # -------------------------------------------------------------
+       # Enable autocompletion.
+       autoload -U compinit && compinit -C && autoload -U zstyle+
+
+       # Attempt to complete as much as possible.
+       zstyle ':completion:*' completer _complete _list _oldlist _expand _ignored _match _correct
+       zstyle ':completion:*::::' completer _expand _complete _ignored _approximate
+
+       # Sort files by name.
+       zstyle ':completion:*' file-sort name
+
+       # Allow for case-insensitive completion.
+       zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
+
+       # Color completions.
+       zstyle ':completion:*' list-colors ${CLICOLOR}
+       zstyle ':completion:*:*:kill:*:processes' command 'ps -axco pid,user,command'
+       zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;31'
+
+       # Set the amount of completions that triggers the menu.
+       zstyle ':completion:*' menu select=long
+
+       # Ignore certain patterns.
+       zstyle ':completion:*:functions' ignored-patterns '_*'
+       zstyle ':completion:*:complete:-command-::commands' ignored-patterns '*\~'
+       zstyle ':completion:*:*:(^rm):*:*files' ignored-patterns '*?.(o|c~|old|pro|zwc)'
+
+       # Cache completions.
+       zstyle ':completion::complete:*' use-cache 1
+       zstyle ':completion::complete:*' cache-path ~/.zcompcache/$HOST
+
+       # Allow errors.
+       zstyle -e ':completion:*:approximate:*' max-errors 'reply=( $(( ($#PREFIX+$#SUFFIX)/2 )) numeric )'
+
+       # Insert all expansions for expand completer (eh, don't know what this does).
+       zstyle ':completion:*:expand:*' tag-order all-expansions
+
+       # Formatting and messages.
+       zstyle ':completion:*' list-prompt '%SAt %p: Hit TAB for more, or the character to insert%s'
+       zstyle ':completion:*' verbose yes
+       zstyle ':completion:*:descriptions' format '%B%d%b'
+       zstyle ':completion:*:messages' format '%d'
+       zstyle ':completion:*:warnings' format 'No matches for: %d'
+       zstyle ':completion:*:corrections' format '%B%d (errors: %e)%b'
+       zstyle ':completion:*' group-name ''
+
+       # Offer indexes before parameters in subscripts.
+       zstyle ':completion:*:*:-subscript-:*' tag-order indexes parameters #Path to your oh-my-zsh configuration.
+
+#Oh My Zsh
 ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load.
@@ -17,54 +90,6 @@ DISABLE_AUTO_TITLE=true
 
 #Alxjrvs Aliases
 #This is the wrong way to do things
-alias apt='sudo aptitude install'
-
-
-alias tmax='~/bin/tmax'
-
-alias yummy='sudo yum install'
-
-alias up='sudo aptitude update && sudo aptitude safe-upgrade'
-alias search='sudo apt-cache search'
-alias la='ls -a'
-alias ..='cd ..'
-alias code='cd ~/Code/'
-
-#get to the dreamhost SSH!
-
-alias dream='ssh alxjrvs@lions.dreamhost.com'
-
-#Go talk to 8t88
-
-alias 88='cd /media/8t88'
-
-#Enable Writing mode
-
-alias lf='cd ~/Writing/lf'
-alias sp='cd ~/Writing/spndxls'
-alias write='cd ~/Writing/'
-
-#Git Alias
-alias gd='git commit -a && git push'
-alias gpom='git push origin master'
-alias gs='git status'
-alias gpum='git pull origin master'
-
-
-#KILL ALL SWP FILES
-
-alias swpk='rm .*.*.swp'
-
-alias gemgone='gem list | cut -d" " -f1 | xargs gem uninstall -aIx'
-
-alias reload='rake db:drop && rake db:migrate && rake db:seed'
-alias ruhrack='rackup -p9292'
-alias reload='rake db:drop && rake db:migrate && rake db:seed'
-alias herokupush='git push heroku master'
-#alias ctags="`brew --prefix`/bin/ctags"
-
-alias tks="tmux kill-server"
-alias tas="tmux attach-session -t"
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
 
@@ -85,7 +110,3 @@ alias tas="tmux attach-session -t"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(git github heroku osx rails rails3 ruby rvm)
 
-source $ZSH/oh-my-zsh.sh
-
-# Customize to your needs...
-export PATH=/Users/alxjrvs/.rvm/gems/ruby-1.9.3-p194@global/bin:/Users/alxjrvs/.rvm/gems/ruby-1.9.3-p194@global/bin:/Users/alxjrvs/.rvm/rubies/ruby-1.9.3-p194/bin:/Users/alxjrvs/.rvm/bin:/Users/alxjrvs/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/Users/alxjrvs/local/bin/:/Users/alxjrvs/bin/
