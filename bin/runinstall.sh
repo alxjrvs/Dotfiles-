@@ -17,7 +17,7 @@ git clone https://github.com/tpope/vim-fugitive.git
 git clone https://github.com/swaroopch/vim-markdown-preview.git
 git clone https://github.com/tpope/vim-rails.git
 git clone https://github.com/benmills/vimux.git
-git clone https://github.com/mikewest/vimroom.git
+git clone https://github.com/BenoitZugmeyer/vimroom.git
 git clone https://github.com/Lokaltog/vim-powerline.git
 git clone git://github.com/wgibbs/vim-irblack.git
 git clone git://github.com/kml/vim-irblack-plus.git
