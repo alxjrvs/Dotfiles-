@@ -21,6 +21,7 @@ git clone https://github.com/BenoitZugmeyer/vimroom.git
 git clone https://github.com/Lokaltog/vim-powerline.git
 git clone git://github.com/wgibbs/vim-irblack.git
 git clone git://github.com/kml/vim-irblack-plus.git
+git clone https://github.com/Townk/vim-autoclose
 
 #Snipmate dependencies
 git clone https://github.com/tomtom/tlib_vim.git
