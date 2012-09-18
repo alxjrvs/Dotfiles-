@@ -30,7 +30,7 @@ imap <C-a> <esc>
 
 "For the Markdown Text
 augroup mkd
-autocmd BufRead *.mkd  set ai formatoptions=tcroqn2 comments=n:&g spell spelllang=en_us nu!
+autocmd BufRead *.md  set ai formatoptions=tcroqn2 comments=n:&g spell spelllang=en_us nu!
 augroup END
 map <leader>p :Mm<CR>
 
