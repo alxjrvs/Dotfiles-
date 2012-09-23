@@ -27,3 +27,6 @@ git clone https://github.com/Townk/vim-autoclose
 git clone https://github.com/tomtom/tlib_vim.git
 git clone https://github.com/MarcWeber/vim-addon-mw-utils.git
 git clone https://github.com/honza/snipmate-snippets.git
+git clone https://github.com/honza/writer.vim
+git clone https://github.com/skalnik/vim-vroom
+git clone https://github.com/benmills/vimux
