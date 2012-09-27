@@ -9,8 +9,6 @@ set history=1000
 set number
 :filetype plugin on
 colorscheme ir_black+
-let g:pydiction_location = '~/.vim/after/ftplugin/pydiction/complete-dict'
-let g:pydiction_menu_height = 20
 
 let g:snippets_dir = '~/.vim/bundle/vim-snipmate/syntax/'
 
@@ -50,11 +48,6 @@ nnoremap <leader>ev <C-w><C-v><C-l>:e $MYVIMRC<cr>
 "" open new v split and switch to it
 nnoremap <leader>w <C-w>v<C-w>l
 
-let g:vimroom_navigational_key = 1
-let g:vimroom_ctermbackground = "bg"
-let g:vimroom_guibackground = "black"
-
-
 :au FocusLost * :wa
 
 hi CursorLine   cterm=NONE ctermbg=darkblue ctermfg=white guibg=darkred guifg=white
@@ -90,3 +83,10 @@ endfunction
 command -nargs=0 OpenNERDTree :call OpenNERDTree()
 
 nmap <Leader>n :OpenNERDTree<CR>
+
+"Powerline
+set laststatus=2
+let g:Powerline_symbols = 'fancy'
+
+"Syntastic
+let g:syntastic_check_on_open=1
