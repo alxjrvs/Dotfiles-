@@ -69,11 +69,12 @@ alias sp='cd ~/Writing/spndxls'
 alias write='cd ~/Writing/'
 
 #Git Alias
-alias gd='git commit -a && git push'
 alias gpom='git push origin master'
 alias gs='git status'
 alias gpum='git pull origin master'
-
+alias gphm='git push heroku master'
+alias hreload='heroku pg:reset DATABASE && heroku run rake db:migrate'
+alias hr='heroku run'
 
 #KILL ALL SWP FILES
 
@@ -89,10 +90,10 @@ alias herokupush='git push heroku master'
 
 alias tks="tmux kill-server"
 alias tas="tmux attach-session -t"
- alias ..='cd ..'
- alias ...='cd ../..'
- alias internet='lsof -inP | cut -f 1 -d " " | uniq'
- alias restart='sudo shutdown -r NOW'
+alias ..='cd ..'
+alias ...='cd ../..'
+alias internet='lsof -inP | cut -f 1 -d " " | uniq'
+alias restart='sudo shutdown -r NOW'
 
  # Expansions
  alias ls='ls -AFGp'
