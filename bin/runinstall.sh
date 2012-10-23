@@ -26,3 +26,6 @@ git clone https://github.com/benmills/vimux
 git clone https://github.com/tomtom/tlib_vim.git
 git clone https://github.com/MarcWeber/vim-addon-mw-utils.git
 git clone https://github.com/honza/snipmate-snippets.git
+git clone https://github.com/alxjrvs/vim-markdown/blob/master/syntax/mkd.vim
+git clone https://github.com/alxjrvs/vim-markdown/blob/master/syntax/mkd.vim
+git clone https://github.com/alxjrvs/vim-markdown

@@ -26,11 +26,6 @@ noremap ;; ;
 
 imap <C-a> <esc>
 
-"For the Markdown Text
-augroup mkd
-autocmd BufRead *.md  set ai formatoptions=tcroqn2 comments=n:&g spell spelllang=en_us nu!
-augroup END
-map <leader>p :Mm<CR>
 
 "Wrapping Words
 " handier esc
@@ -51,7 +46,6 @@ nnoremap <leader>w <C-w>v<C-w>l
 :au FocusLost * :wa
 
 hi CursorLine   cterm=NONE ctermbg=darkblue ctermfg=white guibg=darkred guifg=white
-
 set cursorline
 
 
@@ -90,3 +84,4 @@ let g:Powerline_symbols = 'fancy'
 
 "Syntastic
 let g:syntastic_check_on_open=1
+
