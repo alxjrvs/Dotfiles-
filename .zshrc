@@ -69,6 +69,8 @@ alias sp='cd ~/Writing/spndxls'
 alias write='cd ~/Writing/'
 
 #Git Alias
+
+alias git='hub'
 alias gpom='git push origin master'
 alias gs='git status'
 alias gpum='git pull origin master'
@@ -94,10 +96,15 @@ alias ..='cd ..'
 alias ...='cd ../..'
 alias internet='lsof -inP | cut -f 1 -d " " | uniq'
 alias restart='sudo shutdown -r NOW'
+alias rotl='heroku run ruby add_tweet.rb'
 
- # Expansions
- alias ls='ls -AFGp'
- alias tree='tree -aCFl --charset=UTF8 --du --si'
+#hadar
+
+alias hadar="rsync -avhzSP --stats tanagra@hadar.whatbox.ca:files/"
+
+# Expansions
+alias ls='ls -AFGp'
+alias tree='tree -aCFl --charset=UTF8 --du --si'
 plugins=(git github heroku osx rails rails3 ruby rvm)
 #plugins=(git)
 

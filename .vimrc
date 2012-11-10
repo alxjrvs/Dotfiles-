@@ -45,8 +45,8 @@ nnoremap <leader>w <C-w>v<C-w>l
 
 :au FocusLost * :wa
 
-hi CursorLine   cterm=NONE ctermbg=darkblue ctermfg=white guibg=darkred guifg=white
-set cursorline
+"hi CursorLine   cterm=NONE ctermbg=darkblue ctermfg=white guibg=darkred guifg=white
+"set cursorline
 
 
 " VIMUX commands
@@ -85,3 +85,11 @@ let g:Powerline_symbols = 'fancy'
 "Syntastic
 let g:syntastic_check_on_open=1
 
+set encoding=utf-8
+
+"Babyshoes
+
+map <up> <nop>
+map <down> <nop>
+map <left> <nop>
+map <right> <nop>
