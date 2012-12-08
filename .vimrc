@@ -66,8 +66,8 @@ map rx :CloseVimTmuxPanes
 map rs :InterruptVimTmuxRunner
 
 " tagbar
-let g:tagbar_ctags_bin='/usr/local/bin/ctags'
-noremap  <Leader>t :TagbarToggle <CR>
+"let g:tagbar_ctags_bin='/usr/local/bin/ctags'
+"noremap  <Leader>t :TagbarToggle <CR>
 
 "Nerdtree
 
