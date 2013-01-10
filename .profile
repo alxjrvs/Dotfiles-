@@ -20,3 +20,6 @@ fi
 if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
+
+homebrew=/usr/local/bin:/usr/local/sbin
+export PATH=$homebrew:$PATH

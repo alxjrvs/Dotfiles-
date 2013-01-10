@@ -48,6 +48,7 @@ alias apt='sudo aptitude install'
 
 alias yummy='sudo yum install'
 
+alias vim='mvim -v'
 alias up='sudo aptitude update && sudo aptitude safe-upgrade'
 alias search='sudo apt-cache search'
 alias la='ls -a'
@@ -87,7 +88,6 @@ alias gemgone='gem list | cut -d" " -f1 | xargs gem uninstall -aIx'
 alias reload='rake db:drop && rake db:migrate && rake db:seed'
 alias ruhrack='rackup -p9292'
 alias reload='rake db:drop && rake db:migrate && rake db:seed'
-alias herokupush='git push heroku master'
 #alias ctags="`brew --prefix`/bin/ctags"
 
 alias tks="tmux kill-server"
@@ -98,16 +98,14 @@ alias internet='lsof -inP | cut -f 1 -d " " | uniq'
 alias restart='sudo shutdown -r NOW'
 alias rotl='heroku run ruby add_tweet.rb'
 
-#hadar
-
-alias hadar="rsync -avhzSP --stats tanagra@hadar.whatbox.ca:files/"
 
 # Expansions
 alias ls='ls -AFGp'
 alias tree='tree -aCFl --charset=UTF8 --du --si'
-plugins=(git github heroku osx rails rails3 ruby rvm)
-#plugins=(git)
+
+plugins=(rails3)
 
 source $ZSH/oh-my-zsh.sh
 
-PATH=$PATH:$HOME/.rvm/bin:$HOME/bin
+export PATH=$PATH:$HOME/local/bin:$HOME/.rvm/bin:$HOME/bin
+export PATH=/usr/local/bin:$PATH

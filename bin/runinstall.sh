@@ -29,3 +29,4 @@ git clone https://github.com/honza/snipmate-snippets.git
 git clone https://github.com/alxjrvs/vim-markdown/blob/master/syntax/mkd.vim
 git clone https://github.com/alxjrvs/vim-markdown/blob/master/syntax/mkd.vim
 git clone https://github.com/alxjrvs/vim-markdown
+git clone

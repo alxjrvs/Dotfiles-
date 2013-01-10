@@ -65,10 +65,6 @@ map rx :CloseVimTmuxPanes
 " Interrupt any command running in the runner pane
 map rs :InterruptVimTmuxRunner
 
-" tagbar
-"let g:tagbar_ctags_bin='/usr/local/bin/ctags'
-"noremap  <Leader>t :TagbarToggle <CR>
-
 "Nerdtree
 
 function OpenNERDTree()
