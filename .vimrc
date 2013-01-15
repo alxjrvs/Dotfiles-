@@ -38,10 +38,13 @@ set lbr
 let mapleader = " "
 nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
 
-" edit vimrc in a virtical split
+" edit vimrc in a vertical split
 nnoremap <leader>ev <C-w><C-v><C-l>:e $MYVIMRC<cr>
 "" open new v split and switch to it
 nnoremap <leader>w <C-w>v<C-w>l
+
+"" open new tab and switch to it
+nnoremap <leader>t :tabe <return>
 
 :au FocusLost * :wa
 
